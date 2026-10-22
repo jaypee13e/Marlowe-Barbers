@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Marlowe Barbers | Book your chair online</title>
+    <meta
+      name="description"
+      content="Fades, classic cuts and hot towel shaves. Pick your barber and book a time in under a minute."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="w">
+        <a class="logo" href="#top">Marlowe Barbers</a>
+        <nav>
+          <a href="#book">Book</a><a href="#team">Barbers</a><a href="#visit">Visit</a
+          ><a class="btn sm" href="#book">Book a chair</a>
+        </nav>
+      </div>
+      <div class="pole" aria-hidden="true"></div>
+    </header>
+    <main id="top">
+      <div class="w hero">
+        <h1>Sharp cuts. No waiting around.</h1>
+        <p>Pick your barber, pick your time, and walk straight into the chair.</p>
+        <a class="btn" href="#book">Book in 60 seconds</a>
+      </div>
+
+      <section id="book" style="padding-top: 0">
+        <div class="w">
+          <h2>Book your chair</h2>
+          <div id="done"></div>
+          <div class="book">
+            <div>
+              <div class="step">
+                <h3><span>1</span>Choose services</h3>
+                <div class="opts" id="svc"></div>
+              </div>
+              <div class="step">
+                <h3><span>2</span>Choose your barber</h3>
+                <div class="opts" id="bar"></div>
+              </div>
+              <div class="step">
+                <h3><span>3</span>Pick a day and time</h3>
+                <div class="opts" id="day"></div>
+                <div class="slots" id="slots"></div>
+              </div>
+              <form class="step" id="f">
+                <h3><span>4</span>Your details</h3>
+                <label for="nm">Name</label
+                ><input id="nm" required maxlength="40" autocomplete="name" /><label for="ph"
+                  >Phone</label
+                ><input id="ph" type="tel" required autocomplete="tel" />
+              </form>
+            </div>
+            <aside class="sum">
+              <h3>Your booking</h3>
+              <div id="sum"></div>
+              <button class="btn" form="f" style="width: 100%">Confirm booking</button>
+              <div class="msg" id="msg" role="alert"></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="w">
+          <h2>Meet the barbers</h2>
+          <div class="team" id="team-grid"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="w">
+          <h2>Regulars say</h2>
+          <div class="team">
+            <div class="card">
+              <blockquote>
+                “Booked on my phone while walking over. In and out in 40 minutes, best fade I’ve
+                had.”
+                <footer>Jordan K.</footer>
+              </blockquote>
+            </div>
+            <div class="card">
+              <blockquote>
+                “Dee’s hot towel shave is the best hour of my month.”
+                <footer>Sam O.</footer>
+              </blockquote>
+            </div>
+            <div class="card">
+              <blockquote>
+                “Joel is great with my son. No tears, and he looks sharp.”
+                <footer>Tamara B.</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit">
+        <div class="w two">
+          <div>
+            <h2 style="margin-bottom: 12px">Find the shop</h2>
+            <p>82 Harbor Street, next to the post office.</p>
+            <p class="mut">
+              Walk-ins welcome when a chair is free. Booked clients always go first.
+            </p>
+          </div>
+          <div class="card hrs">
+            <div><span>Monday to Saturday</span><span>9:00 am to 6:00 pm</span></div>
+            <div><span>Sunday</span><span>Closed</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="pitch">
+      <div class="w">
+        <div>
+          <strong>Want online booking for your business?</strong>
+          <p>
+            Demo site designed and built by <span id="devname"></span>. Fewer missed calls, fewer
+            no-shows.
+          </p>
+        </div>
+        <a class="btn" id="devmail" href="#">Get a free quote</a>
+      </div>
+    </div>
+    <footer class="f">
+      <div class="w">© Marlowe Barbers. This is a demo business made for portfolio purposes.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
